@@ -1,5 +1,6 @@
 import { QRCode, QRSvg } from 'sexy-qr'
 import fileSaver from 'file-saver'
+import styles from './styles.module.css'
 // import reactLogo from './assets/react.svg'
 export const Downloads = () => {
   //   const svgCodeMportal = useMemo(() => {
@@ -55,7 +56,9 @@ export const Downloads = () => {
     <div>
       <h2>Download QR</h2>
       <div dangerouslySetInnerHTML={markup}></div>
-      <button onClick={handleDownload}>Скачать QR-код</button>
+      <button className={styles.button} onClick={handleDownload}>
+        Скачать QR-код
+      </button>
     </div>
   )
 }
