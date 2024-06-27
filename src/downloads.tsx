@@ -1,6 +1,5 @@
 import { QRCode, QRSvg } from 'sexy-qr'
 import fileSaver from 'file-saver'
-import { useMemo } from 'react'
 // import reactLogo from './assets/react.svg'
 export const Downloads = () => {
   //   const svgCodeMportal = useMemo(() => {
